@@ -28,6 +28,11 @@ TARGET_BOARD_INFO_FILE := device/motorola/falcon/board-info.txt
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := falcon_defconfig
 
+ 
+# Liquid stuff
+LIQUID_CHANGELOG := true
+LIQUIFY := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_falcon.c
@@ -44,6 +49,7 @@ DEVICE_RESOLUTION := 1280x720
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+TW_THEME := portrait_hdpi
 
 # inherit from the proprietary version
 -include vendor/motorola/falcon/BoardConfigVendor.mk
