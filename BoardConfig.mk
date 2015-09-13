@@ -28,6 +28,9 @@ TARGET_BOARD_INFO_FILE := device/motorola/falcon/board-info.txt
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := falcon_defconfig
 
+# Use SaberMod Toolchains
+SABERMOD_TOOLCHAIN_ENABLED := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_falcon.c
