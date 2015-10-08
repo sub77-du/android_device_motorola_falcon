@@ -44,6 +44,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TW_THEME := portrait_hdpi
 
 # inherit from the proprietary version
 -include vendor/motorola/falcon/BoardConfigVendor.mk
