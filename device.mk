@@ -37,5 +37,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/apns-conf.xml:system/etc/apns-conf.xml \
     $(LOCAL_PATH)/apns-conf-cdma.xml:system/etc/apns-conf-cdma.xml
 
+# OpenSSH
+PRODUCT_PACKAGES += \
+    ssh \
+    sftp \
+    scp \
+    sshd \
+    ssh-keygen \
+    sshd_config \
+    start-ssh
+
 # Inherit from msm8226-common
 $(call inherit-product, device/motorola/msm8226-common/msm8226.mk)
